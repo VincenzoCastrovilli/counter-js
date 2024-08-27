@@ -21,11 +21,27 @@ let decrementByOne = () => {
   screen.textContent = `count is ${count}`;
 };
 
+let incrementByTen = () => {
+  count += 10;
+  screen.textContent = `count is ${count}`;
+};
+
+let decrementByTen = () => {
+  count -= 10;
+  screen.textContent = `count is ${count}`;
+};
+
 let resetCount = () => {
   count = 0;
   screen.textContent = `count is ${count}`;
 };
 
-createButton("+", incrementByOne);
-createButton("-", decrementByOne);
+createButton("+1", incrementByOne);
+
+createButton("+10", incrementByTen);
+
+createButton("-1", decrementByOne);
+
+createButton("-10", decrementByTen);
+
 createButton("RESET", resetCount);
