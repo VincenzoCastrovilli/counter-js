@@ -1,8 +1,11 @@
 let count = 0;
+
 const buttonsList = document.querySelector(".buttons");
 
-const screen = document.querySelector(".screen");
-screen.textContent = `count is ${count}`;
+function showCount() {
+  const screen = document.querySelector(".screen");
+  screen.textContent = count;
+}
 
 function createButton(content, callback) {
   let button = document.createElement("button");
@@ -13,28 +16,30 @@ function createButton(content, callback) {
 
 let incrementByOne = () => {
   count++;
-  screen.textContent = `count is ${count}`;
+  showCount();
 };
 
 let decrementByOne = () => {
   count--;
-  screen.textContent = `count is ${count}`;
+  showCount();
 };
 
 let incrementByTen = () => {
   count += 10;
-  screen.textContent = `count is ${count}`;
+  showCount();
 };
 
 let decrementByTen = () => {
   count -= 10;
-  screen.textContent = `count is ${count}`;
+  showCount();
 };
 
 let resetCount = () => {
   count = 0;
-  screen.textContent = `count is ${count}`;
+  showCount();
 };
+
+showCount();
 
 createButton("+1", incrementByOne);
 
