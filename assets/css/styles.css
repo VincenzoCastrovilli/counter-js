@@ -5,10 +5,28 @@
   font-family: "Chakra Petch", serif;
 }
 
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    #9ba89f,
+    #97ad9e,
+    #94b29c,
+    #90b69a,
+    #8dbb97
+  );
+}
+
+.title {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 60px;
+}
+
 .main-container {
   width: 700px;
   margin: 0 auto;
-  margin-top: 10vh;
+  margin-top: 5vh;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -23,6 +41,7 @@
   padding: 20px;
   justify-content: center;
   font-size: 80px;
+  font-weight: 400;
   width: 60%;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -53,6 +72,7 @@
   width: 100%;
   padding: 8%;
   font-size: 30px;
+  font-weight: 500;
   touch-action: manipulation;
   background-color: #f6414a;
   color: #fff;
@@ -80,6 +100,7 @@
   background-color: rgb(133, 49, 49);
   color: #fff;
   font-size: 30px;
+  font-weight: 500;
   border: none;
   transition: all 0.2s ease;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;

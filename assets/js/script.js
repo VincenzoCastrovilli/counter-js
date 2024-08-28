@@ -4,6 +4,9 @@ const incrementButtons = document.querySelector(".increment-buttons");
 const decrementButtons = document.querySelector(".decrement-buttons");
 const resetButton = document.querySelector(".reset");
 
+const title = document.querySelector(".title");
+title.textContent = "Counter.js";
+
 function showCount() {
   const screen = document.querySelector(".screen");
   screen.textContent = count;
