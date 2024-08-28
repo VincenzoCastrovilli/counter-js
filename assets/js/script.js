@@ -1,17 +1,20 @@
 let count = 0;
 
-const buttonsList = document.querySelector(".buttons");
+const incrementButtons = document.querySelector(".increment-buttons");
+const decrementButtons = document.querySelector(".decrement-buttons");
+const resetButton = document.querySelector(".reset");
 
 function showCount() {
   const screen = document.querySelector(".screen");
   screen.textContent = count;
 }
 
-function createButton(content, callback) {
+function createButton(text, callback, parentNode, className) {
   let button = document.createElement("button");
-  button.textContent = content;
+  button.textContent = text;
+  button.classList.add(className);
   button.addEventListener("click", callback);
-  buttonsList.append(button);
+  parentNode.append(button);
 }
 
 let incrementByOne = () => {
@@ -41,12 +44,12 @@ let resetCount = () => {
 
 showCount();
 
-createButton("+1", incrementByOne);
+createButton("+1", incrementByOne, incrementButtons, "inc-btn");
 
-createButton("+10", incrementByTen);
+createButton("+10", incrementByTen, incrementButtons, "inc-btn");
 
-createButton("-1", decrementByOne);
+createButton("-1", decrementByOne, decrementButtons, "dec-btn");
 
-createButton("-10", decrementByTen);
+createButton("-10", decrementByTen, decrementButtons, "dec-btn");
 
-createButton("RESET", resetCount);
+createButton("RESET", resetCount, resetButton, "reset-btn");
