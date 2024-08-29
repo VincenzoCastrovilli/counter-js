@@ -39,7 +39,7 @@ Using the Best-README-Template.
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://github.com/VincenzoCastrovilli/counter-js/blob/main/assets/images/sreenshot.png)
 
 Simple counter with buttons for increment/decrement count by 1 and by 10. It also has a reset button.
 
@@ -74,7 +74,7 @@ Project Link: [https://github.com/VincenzoCastrovilli/counter-js](https://github
 [stars-url]: https://github.com/VincenzoCastrovilli/counter-js/stargazers
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/vincenzo-castrovilli
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: assets/images/sreenshot.png
 [Javascript]: https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E
 [HTML5]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
 [CSS3]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
