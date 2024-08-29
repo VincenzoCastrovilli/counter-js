@@ -15,7 +15,7 @@ Using the Best-README-Template.
     A simple counter made with JavaScript
     <br />
     <br />
-    <a href="https://github.com/VincenzoCastrovilli/counter-js">View Demo</a>
+    <a href="https://counter-js-vc.netlify.app">View Demo</a>
     ·
     <a href="https://github.com/VincenzoCastrovilli/counter-js/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
   </p>
